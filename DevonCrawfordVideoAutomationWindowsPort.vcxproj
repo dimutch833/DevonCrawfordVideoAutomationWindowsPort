@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{AC056A6A-4B3A-41E0-BE49-43A2E6C309A7}</ProjectGuid>
+    <RootNamespace>DevonCrawfordVideoAutomationWindowsPort</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\Gena\source\repos\DevonCrawfordVideoAutomationWindowsPort\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>C:\Users\Gena\source\repos\DevonCrawfordVideoAutomationWindowsPort\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;postproc.lib;swresample.lib;swscale.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="examples\random-splice.c" />
+    <ClCompile Include="src\Clip.c" />
+    <ClCompile Include="src\ClipDecode.c" />
+    <ClCompile Include="src\ClipEncode.c" />
+    <ClCompile Include="src\LinkedListAPI.c" />
+    <ClCompile Include="src\OutputContext.c" />
+    <ClCompile Include="src\Sequence.c" />
+    <ClCompile Include="src\SequenceDecode.c" />
+    <ClCompile Include="src\SequenceEncode.c" />
+    <ClCompile Include="src\Timebase.c" />
+    <ClCompile Include="src\Util.c" />
+    <ClCompile Include="src\VideoContext.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Clip.h" />
+    <ClInclude Include="include\ClipDecode.h" />
+    <ClInclude Include="include\ClipEncode.h" />
+    <ClInclude Include="include\dirent.h" />
+    <ClInclude Include="include\libavcodec\ac3_parser.h" />
+    <ClInclude Include="include\libavcodec\adts_parser.h" />
+    <ClInclude Include="include\libavcodec\avcodec.h" />
+    <ClInclude Include="include\libavcodec\avdct.h" />
+    <ClInclude Include="include\libavcodec\avfft.h" />
+    <ClInclude Include="include\libavcodec\d3d11va.h" />
+    <ClInclude Include="include\libavcodec\dirac.h" />
+    <ClInclude Include="include\libavcodec\dv_profile.h" />
+    <ClInclude Include="include\libavcodec\dxva2.h" />
+    <ClInclude Include="include\libavcodec\jni.h" />
+    <ClInclude Include="include\libavcodec\mediacodec.h" />
+    <ClInclude Include="include\libavcodec\qsv.h" />
+    <ClInclude Include="include\libavcodec\vaapi.h" />
+    <ClInclude Include="include\libavcodec\vdpau.h" />
+    <ClInclude Include="include\libavcodec\version.h" />
+    <ClInclude Include="include\libavcodec\videotoolbox.h" />
+    <ClInclude Include="include\libavcodec\vorbis_parser.h" />
+    <ClInclude Include="include\libavcodec\xvmc.h" />
+    <ClInclude Include="include\libavdevice\avdevice.h" />
+    <ClInclude Include="include\libavdevice\version.h" />
+    <ClInclude Include="include\libavfilter\avfilter.h" />
+    <ClInclude Include="include\libavfilter\buffersink.h" />
+    <ClInclude Include="include\libavfilter\buffersrc.h" />
+    <ClInclude Include="include\libavfilter\version.h" />
+    <ClInclude Include="include\libavformat\avformat.h" />
+    <ClInclude Include="include\libavformat\avio.h" />
+    <ClInclude Include="include\libavformat\version.h" />
+    <ClInclude Include="include\libavutil\adler32.h" />
+    <ClInclude Include="include\libavutil\aes.h" />
+    <ClInclude Include="include\libavutil\aes_ctr.h" />
+    <ClInclude Include="include\libavutil\attributes.h" />
+    <ClInclude Include="include\libavutil\audio_fifo.h" />
+    <ClInclude Include="include\libavutil\avassert.h" />
+    <ClInclude Include="include\libavutil\avconfig.h" />
+    <ClInclude Include="include\libavutil\avstring.h" />
+    <ClInclude Include="include\libavutil\avutil.h" />
+    <ClInclude Include="include\libavutil\base64.h" />
+    <ClInclude Include="include\libavutil\blowfish.h" />
+    <ClInclude Include="include\libavutil\bprint.h" />
+    <ClInclude Include="include\libavutil\bswap.h" />
+    <ClInclude Include="include\libavutil\buffer.h" />
+    <ClInclude Include="include\libavutil\camellia.h" />
+    <ClInclude Include="include\libavutil\cast5.h" />
+    <ClInclude Include="include\libavutil\channel_layout.h" />
+    <ClInclude Include="include\libavutil\common.h" />
+    <ClInclude Include="include\libavutil\cpu.h" />
+    <ClInclude Include="include\libavutil\crc.h" />
+    <ClInclude Include="include\libavutil\des.h" />
+    <ClInclude Include="include\libavutil\dict.h" />
+    <ClInclude Include="include\libavutil\display.h" />
+    <ClInclude Include="include\libavutil\downmix_info.h" />
+    <ClInclude Include="include\libavutil\encryption_info.h" />
+    <ClInclude Include="include\libavutil\error.h" />
+    <ClInclude Include="include\libavutil\eval.h" />
+    <ClInclude Include="include\libavutil\ffversion.h" />
+    <ClInclude Include="include\libavutil\fifo.h" />
+    <ClInclude Include="include\libavutil\file.h" />
+    <ClInclude Include="include\libavutil\frame.h" />
+    <ClInclude Include="include\libavutil\hash.h" />
+    <ClInclude Include="include\libavutil\hdr_dynamic_metadata.h" />
+    <ClInclude Include="include\libavutil\hmac.h" />
+    <ClInclude Include="include\libavutil\hwcontext.h" />
+    <ClInclude Include="include\libavutil\hwcontext_cuda.h" />
+    <ClInclude Include="include\libavutil\hwcontext_d3d11va.h" />
+    <ClInclude Include="include\libavutil\hwcontext_drm.h" />
+    <ClInclude Include="include\libavutil\hwcontext_dxva2.h" />
+    <ClInclude Include="include\libavutil\hwcontext_mediacodec.h" />
+    <ClInclude Include="include\libavutil\hwcontext_qsv.h" />
+    <ClInclude Include="include\libavutil\hwcontext_vaapi.h" />
+    <ClInclude Include="include\libavutil\hwcontext_vdpau.h" />
+    <ClInclude Include="include\libavutil\hwcontext_videotoolbox.h" />
+    <ClInclude Include="include\libavutil\imgutils.h" />
+    <ClInclude Include="include\libavutil\intfloat.h" />
+    <ClInclude Include="include\libavutil\intreadwrite.h" />
+    <ClInclude Include="include\libavutil\lfg.h" />
+    <ClInclude Include="include\libavutil\log.h" />
+    <ClInclude Include="include\libavutil\lzo.h" />
+    <ClInclude Include="include\libavutil\macros.h" />
+    <ClInclude Include="include\libavutil\mastering_display_metadata.h" />
+    <ClInclude Include="include\libavutil\mathematics.h" />
+    <ClInclude Include="include\libavutil\md5.h" />
+    <ClInclude Include="include\libavutil\mem.h" />
+    <ClInclude Include="include\libavutil\motion_vector.h" />
+    <ClInclude Include="include\libavutil\murmur3.h" />
+    <ClInclude Include="include\libavutil\opt.h" />
+    <ClInclude Include="include\libavutil\parseutils.h" />
+    <ClInclude Include="include\libavutil\pixdesc.h" />
+    <ClInclude Include="include\libavutil\pixelutils.h" />
+    <ClInclude Include="include\libavutil\pixfmt.h" />
+    <ClInclude Include="include\libavutil\random_seed.h" />
+    <ClInclude Include="include\libavutil\rational.h" />
+    <ClInclude Include="include\libavutil\rc4.h" />
+    <ClInclude Include="include\libavutil\replaygain.h" />
+    <ClInclude Include="include\libavutil\ripemd.h" />
+    <ClInclude Include="include\libavutil\samplefmt.h" />
+    <ClInclude Include="include\libavutil\sha.h" />
+    <ClInclude Include="include\libavutil\sha512.h" />
+    <ClInclude Include="include\libavutil\spherical.h" />
+    <ClInclude Include="include\libavutil\stereo3d.h" />
+    <ClInclude Include="include\libavutil\tea.h" />
+    <ClInclude Include="include\libavutil\threadmessage.h" />
+    <ClInclude Include="include\libavutil\time.h" />
+    <ClInclude Include="include\libavutil\timecode.h" />
+    <ClInclude Include="include\libavutil\timestamp.h" />
+    <ClInclude Include="include\libavutil\tree.h" />
+    <ClInclude Include="include\libavutil\twofish.h" />
+    <ClInclude Include="include\libavutil\tx.h" />
+    <ClInclude Include="include\libavutil\version.h" />
+    <ClInclude Include="include\libavutil\xtea.h" />
+    <ClInclude Include="include\libpostproc\postprocess.h" />
+    <ClInclude Include="include\libpostproc\version.h" />
+    <ClInclude Include="include\libswresample\swresample.h" />
+    <ClInclude Include="include\libswresample\version.h" />
+    <ClInclude Include="include\libswscale\swscale.h" />
+    <ClInclude Include="include\libswscale\version.h" />
+    <ClInclude Include="include\LinkedListAPI.h" />
+    <ClInclude Include="include\OutputContext.h" />
+    <ClInclude Include="include\OutputContextStructs.h" />
+    <ClInclude Include="include\RandomSplice.h" />
+    <ClInclude Include="include\Sequence.h" />
+    <ClInclude Include="include\SequenceDecode.h" />
+    <ClInclude Include="include\SequenceEncode.h" />
+    <ClInclude Include="include\Timebase.h" />
+    <ClInclude Include="include\Util.h" />
+    <ClInclude Include="include\VideoContext.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="lib\avcodec.lib" />
+    <Library Include="lib\avdevice.lib" />
+    <Library Include="lib\avfilter.lib" />
+    <Library Include="lib\avformat.lib" />
+    <Library Include="lib\avutil.lib" />
+    <Library Include="lib\postproc.lib" />
+    <Library Include="lib\swresample.lib" />
+    <Library Include="lib\swscale.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
