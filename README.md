@@ -3,7 +3,9 @@
 ## Requirments:
  : Need  Visual Studio 2019 and 
  : FFMPEG 32 Bit Dlls for compilling 
+Steps:
 
- 1.open .sln to compile
-
- And also change directories of includes and libs in Linker and C++ tabs
+ 1.open .sln 
+ 2.change directories of includes and libs in Linker and C++ tabs
+ 3.Compile
+ 4.Enjoy of magic video editing :)
