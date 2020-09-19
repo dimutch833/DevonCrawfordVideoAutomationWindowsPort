@@ -1,8 +1,8 @@
 # Devon Crawford Video Automation Windows Port
 ### Original https://github.com/DevonCrawford/Video-Editing-Automation
 ## Requirments:
-### 1. Need  Visual Studio 2019 
-### 2. FFMPEG 32 Bit Dlls for compilling 
+##### 1. Need  Visual Studio 2019 
+##### 2. FFMPEG 32 Bit Dlls for compilling 
 
 ## Steps:
 ##### 1.open .sln 
